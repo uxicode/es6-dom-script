@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자정의 성능 모니터 위젯</title>
+</head>
+<body>
+</body>
+<script type="module" src="js/common.js"></script>
+<script>
+    for(let i = 0; i < 100000; i++){
+        let a1 = 123.456789;
+        let b1 = parseInt(`${a1}`);
+    }
+
+    for(let i = 0; i < 100000; i++){
+        let a2 = 123.456789;
+        let b2 = ~~(a2);
+    }
+</script>
+</html>
